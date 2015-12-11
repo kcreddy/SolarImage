@@ -1,0 +1,35 @@
+/*
+So we just need to add the font-size to the #nav 
+and the <br> around the flags, to get it to look right 
+*/ 
+
+<style>
+            #nav {
+                line-height:10px;
+                height:800px;
+                width:100px;
+                float:left;
+                padding:10px;
+				font-size: 10px; 
+            }                     
+        </style>        
+   
+   
+   
+   
+    <div id="nav">
+        <a href="services.php?lang=en"><img src="translations/images/flag.en.jpg" /><font size="4"><br></font>
+            <?php echo $lang['LANGUAGE_FLAG_ENGLISH'] ?></a></a><font size="4"><br><br></font>
+    <a href="services.php?lang=el"><img src="translations/images/flag.el.jpg" /><font size="4"><br></font>
+        <?php echo $lang['LANGUAGE_FLAG_GREEK'] ?></a><font size="4"><br><br></font>
+    <a href="services.php?lang=it"><img src="translations/images/flag.it.jpg" /><font size="4"><br></font>
+        <?php echo $lang['LANGUAGE_FLAG_ITALIAN'] ?></a><font size="4"><br><br></font>
+    <a href="services.php?lang=es"><img src="translations/images/flag.es.jpg" /><font size="4"><br></font>
+        <?php echo $lang['LANGUAGE_FLAG_SPANISH'] ?></a><font size="4"><br><br></font>
+    <a href="services.php?lang=ca"><img src="translations/images/flag.ca.jpg" /><font size="4"><br></font>
+        <?php echo $lang['LANGUAGE_FLAG_CATALAN'] ?></a><font size="4"><br><br></font>   
+    <a href="services.php?lang=pt"><img src="translations/images/flag.pt.jpg" /><font size="4"><br></font>
+        <?php echo $lang['LANGUAGE_FLAG_PORTUGUESE'] ?></a><font size="4"><br><br></font>
+    <a href="services.php?lang=tl"><img src="translations/images/flag.tl.jpg" /><font size="4"><br></font>
+        <?php echo $lang['LANGUAGE_FLAG_TAGALOG'] ?></a><font size="4"><br><br></font>
+	</div>

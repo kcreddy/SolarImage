@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--
+Document to log work done on CARINA for evaluation and salary purposes.
+-->
+<html>
+    <head>
+        <title>Change Log</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            h1 {
+                font-size: 20;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <font size="20"> <b> Change Log - Jared Morris </b> </font> <br />
+            <ul style="list-style-type:circle"> 
+                <li> 12 JUN 15 - moved to MATLAB project.  No updates to this file after that point.  </li>
+                <li> Slowed rate of slideshow </li>
+                <li> implemented Twitter API on index.php </li>
+                <li> Discovered serious security flaw allowing any user to access admin controls page </li>    
+                <li> Discovered and fixed broken links </li>
+                <li> annotate.php bug -- class was "active".  Changed to "button-2" to restore click function. </li>
+                <li> stylistic changes to annotate.php for better precision work. <li>
+                <li> 中文 translations (traditional & simplified) </li>
+                <li> Pinyin translation for Chinese without character support (for older systems) </li>
+                <li> Beta & Notice messages introduction </li>
+                <!--<li> Style & Design fixes to accommodate vastly different Chinese text & formatting </li> -->
+                <li> button fixes </li>
+                <li> ALAs noted </li>
+                <li> Spoke with Edward Sadzewicz </li>
+                <li> Minor stylistic changes and text changes/fixes </li>
+                <li> fixed some unsecure file permissions to others </li>
+                <li> removal of skype API, new skype account, new features here. </li>
+                <!-- <li> Optimized for small-screen displays </li>
+                <li> Discovered and fixed English (minor) </li>
+                <li> General Debugging </li> -->       
+            </ul>
+            
+                <br /> <br />
+                <br /> <br />
+                
+        </div>
+        
+        <div class="with images">
+            <div class="line bug">
+                <h1><b>Line Connection Bug</b></h1> <br />
+            Here is a series of polygons created with the annotation tool and connect lines function
+            <br /><img src="log images/before line bug.PNG" alt=""/>
+            <br /> But, if we click "delete all annotations," then 'cancel' when it tries to confirm "ARE YOU SURE?", all lines are deleted
+            <br /> <b>Note: Image from different session.  This bug does not change point locations.</b> <br /><img src="log images/cancelresume2.PNG" alt=""/>
+            <br /> Worse yet, if we click "delete last annotation point" after a mistake...
+            <br /> <img src="log images/after line bug.PNG" alt=""/>
+            <br /> <i> Perfect </i> fix not yet discovered.  All fixes found end up deleting ALL lines upon delete last point.  This is an improvement, but not quite what we want. 
+            </div>
+            
+            <br /><br /><br /><br />
+            
+            <div class="security flaw">
+                <h1><b>Security Flaw</b></h1><br />
+                <br /><img src="log images/securityflaw.PNG" alt=""/>
+                <br />Code allows for any user with the URL to entire the admin options page.
+            </div>
+            
+            <br /><br /><br /><br />
+            
+            <div class="line">
+                <h1><b>Stylistic annotate.php</b></h1><br />
+                <br /><img src="log images/linewidth.png" alt=""/>
+                <br />Line segements are thinner to allow for precision work without the need to zoom browser.
+                <br /><img src="log images/clickfunction.png" alt=""/>
+                <br />Added jQuery .click(function() { . . . }); feature to connect points button for a highlight.  This tells the user whether the button is pressed or not.
+            </div>
+            
+            <br /><br /><br /><br />
+            
+            <div class="diff note">
+            At this point, Edward and showed me the differences tool in netbeans, and I will use it to document my work.  The code below is a working code and not functional, just for demonstration purposes.
+            <br /> Example:
+            <br /> <img src="log images/diff.PNG" alt=""/>
+            </div>
+            
+            <div class='virus'>
+                <h1><b>Image Uploader Virus</b></h1><br />
+                <br />Approached several methods of uploading a virus to the site, including fake images and infected files. Fake images were immediately rejected by the image uploader -- a result of the "get dimensions" function in the .php code that runs the uploader. <br/>
+                Infected images were uploaded, but would <b>NOT</b> execute. The webapp even blocked annotation to prevent any vulnerabilities in the read/write processes it uses. See images below.
+                <br />
+                <br /> <img src="log images/virus1.JPG" alt=""/>
+                <br /> <img src="log images/virus2.JPG" alt=""/>
+                <br /> <img src="log images/virus3.JPG" alt=""/>
+            <br /><br /><br /><br />
+        </div>
+        
+    </body>
+</html>

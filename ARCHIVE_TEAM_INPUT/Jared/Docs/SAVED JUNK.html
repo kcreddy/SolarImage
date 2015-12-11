@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>JUNK</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            
+            <script>
+        function tableCreate() {
+                var body = document.body,
+                    tbl = document.createElement('table');
+            tbl.style.width = '100px';
+            tbl.style.border = "1px solid black";
+            
+            for(var i = 0; i < 3; i++) {
+                var tr = tbl.insertRow();
+                for(var j = 0; j < 3; j++) {
+                    if (i === 2 && j === 1) {
+                        break; }
+                    else {
+                        var td = tr.insertCell();
+                        td.appendChild(document.createTextNode('Cell'));
+                        td.style.border = "1px solid black";
+                        if(i === 1 && j === 1) {
+                            td.setAttribute('rowSpan','2')''
+                        }
+                    }
+                }
+            }
+            body.appendChild(tbl);
+        }
+        tableCreate(); 
+            </script>
+            
+        </div>
+    </body>
+</html>

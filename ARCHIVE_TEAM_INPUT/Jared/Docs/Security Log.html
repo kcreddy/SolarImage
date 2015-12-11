@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Security Log</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div><font size="20"><b>Notes</b></font>
+            <ul style='list-style:disc'>
+                <li> <font color='red'>website vulnerable to brute force attacks </li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Informs the user "incorrect password" when password is incorrect.  "login failed" secure message when username is wrong, but not when correct.  This cuts brute force attack time down tremendously.<li>
+                    <img src="log images/brute1.PNG" alt=""/>
+                <li> <b> <font color='green'> Fixed.  Will check public source code for further suspected insecurity.  </font> </b> </li>
+                <li> adminoptions.php doesn't check user privileges</font></li>
+                <li><font color='blue'>checked file permissions for every file</font></li>
+                <li><font color='green'><b>fixed some unsecure file permissions</b></font></li> </font>
+                <li><font color='green'>Image uploader <b>secure</b>.  Could not upload false images, and it blocked annotation of a confirmed, working virus.</li>
+                </font><li><font color='blue'>suggest using IP whitelist</li></font></div>
+    </body>
+</html> 

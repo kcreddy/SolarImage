@@ -1,0 +1,22 @@
+<?php
+//include('views/_header.php');
+include_once 'config/lang_config.php';
+include_once 'translations/' . $lang_file;
+?>
+
+<html>
+        <frameset rows="70%, 30%">
+        <frameset cols="50%,50%">
+
+<frame src="annotate.php?folder=folder1&image=20130506_000043_2048_0193.jpg" name="frame1">
+      <!--      <frame src="annotate.php?folder=folder1&images=newer.jpg" name="frame1">   -->
+            <frame src="MySkype.html" name="frame2">
+        </frameset>
+                <frameset cols="60%, 40%">
+                    <frame src="chat.php" name="frame2">
+                        <frame src="polygons.html" name"frame3">
+                            </frameset>
+               
+                   
+            </frameset>
+</html>
